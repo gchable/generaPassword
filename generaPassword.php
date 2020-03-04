@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
         $caracteres = [
             "ABCDEFGHJKMNPQRSTUVWXYZ",
             "abcdefghjkmnpqrstuvwxyz",
-            "123456456789",
+            "23456456789",
             "+-.,;=_",
         ];
 
