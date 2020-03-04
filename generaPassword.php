@@ -1,16 +1,17 @@
 <?php
+
+$caracteres = [
+    "ABCDEFGHJKMNPQRSTUVWXYZ",
+    "abcdefghjkmnpqrstuvwxyz",
+    "23456456789",
+    "+-.,;=_",
+];
+
 if (isset($_POST['submit'])) {
     $largo = $_POST['largo'];
 
     function genera($largo)
     {
-        $caracteres = [
-            "ABCDEFGHJKMNPQRSTUVWXYZ",
-            "abcdefghjkmnpqrstuvwxyz",
-            "23456456789",
-            "+-.,;=_",
-        ];
-
         $contador = 0;
         $pass = "";
 
@@ -41,10 +42,10 @@ echo "<h1>Generar contraseña" . $largoSolicitado . "</h1>";
 
 <?php
 echo "<p>Patrón:<br>
-            Mayúsculas: ABCDEFGHJKMNPQRSTUVWXYZ<br>
-            Minúsculas: abcdefghjkmnpqrstuvwxyz<br>
-            Números: 123456456789<br>
-            Símbolos: +-.,=_;<br><br>
+            Mayúsculas: ".$caracteres[0]."<br>
+            Minúsculas: ".$caracteres[1]."<br>
+            Números: ".$caracteres[2]."<br>
+            Símbolos: ".$caracteres[3]."<br><br>
     ";
 ?>
 
