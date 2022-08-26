@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>generaPassword</title>
+    <style>
+        .btn-large {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Genera contraseña</span>
+                        <p>Patrón:</p>
+                        <p>ABCDEFGHJKMNPQRSTUVWXYZ</p>
+                        <p>abcdefghjkmnpqrstuvwxyz</p>
+                        <p>23456456789</p>
+                        <p>+ - . * , / ; = _ " ,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <form id="formulario" class="col s12 m6">
+                <div class="input-field s12 m6">
+                    <input id="largo" name="largo" type="number" max="20" class="validate" required>
+                    <label for="largo">Largo de la contraseña</label>
+                </div>
+                <div class="row" id="resultado">
+                </div>
+
+                <button class="waves-effect waves-light btn btn-large" type="submit"><i
+                        class="material-icons left">vpn_key</i>Aceptar</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
